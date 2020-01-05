@@ -21,5 +21,5 @@ return array(
     'React\\Dns\\' => array($vendorDir . '/react/dns/src'),
     'React\\Cache\\' => array($vendorDir . '/react/cache/src'),
     'Psr\\Http\\Message\\' => array($vendorDir . '/psr/http-message/src'),
-    'Lightning\\' => array($vendorDir . '/heroest/lightning-framework/src'),
+    'Lightning\\' => array($vendorDir . '/heroest/lightning-react-framework/src'),
 );

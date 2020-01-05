@@ -11,6 +11,6 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "heroest/lightning-framework": "dev-master"
+        "heroest/lightning-react-framework": "dev-master"
     }
 }

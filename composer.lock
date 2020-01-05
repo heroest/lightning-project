@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "db40b868f59cff747e26488d65976f54",
+    "content-hash": "bbc32fa52cc1433e6d7bc895f17959c7",
     "packages": [
         {
             "name": "evenement/evenement",
@@ -56,17 +56,17 @@
             "time": "2017-07-23T21:35:13+00:00"
         },
         {
-            "name": "heroest/lightning-framework",
+            "name": "heroest/lightning-react-framework",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/heroest/lightning-framework.git",
-                "reference": "1873770f44dae1f1db4f0f950e0a3c97b84f3c47"
+                "url": "https://github.com/heroest/lightning-react-framework.git",
+                "reference": "8e86eec1d6aba043cf0cfaef2a58d2d75d8da2e2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/heroest/lightning-framework/zipball/1873770f44dae1f1db4f0f950e0a3c97b84f3c47",
-                "reference": "1873770f44dae1f1db4f0f950e0a3c97b84f3c47",
+                "url": "https://api.github.com/repos/heroest/lightning-react-framework/zipball/8e86eec1d6aba043cf0cfaef2a58d2d75d8da2e2",
+                "reference": "8e86eec1d6aba043cf0cfaef2a58d2d75d8da2e2",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -103,21 +103,21 @@
                     "email": "kakashi@live.cn"
                 }
             ],
-            "description": "basic console operation",
-            "time": "2020-01-05T15:15:52+00:00"
+            "description": "non-block I/O framework",
+            "time": "2020-01-05T16:25:32+00:00"
         },
         {
             "name": "psr/http-message",
-            "version": "1.0.1",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/http-message.git",
-                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363"
+                "reference": "efd67d1dc14a7ef4fc4e518e7dee91c271d524e4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/http-message/zipball/f6561bf28d520154e4b0ec72be95418abe6d9363",
-                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363",
+                "url": "https://api.github.com/repos/php-fig/http-message/zipball/efd67d1dc14a7ef4fc4e518e7dee91c271d524e4",
+                "reference": "efd67d1dc14a7ef4fc4e518e7dee91c271d524e4",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -160,7 +160,7 @@
                 "request",
                 "response"
             ],
-            "time": "2016-08-06T14:39:51+00:00"
+            "time": "2019-08-29T13:16:46+00:00"
         },
         {
             "name": "react/cache",
@@ -412,16 +412,16 @@
         },
         {
             "name": "react/promise",
-            "version": "v2.7.1",
+            "version": "2.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactphp/promise.git",
-                "reference": "31ffa96f8d2ed0341a57848cbb84d88b89dd664d"
+                "reference": "7c98fda611a3879ed3381d2ca57d93239465dfa9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reactphp/promise/zipball/31ffa96f8d2ed0341a57848cbb84d88b89dd664d",
-                "reference": "31ffa96f8d2ed0341a57848cbb84d88b89dd664d",
+                "url": "https://api.github.com/repos/reactphp/promise/zipball/7c98fda611a3879ed3381d2ca57d93239465dfa9",
+                "reference": "7c98fda611a3879ed3381d2ca57d93239465dfa9",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -460,7 +460,7 @@
                 "promise",
                 "promises"
             ],
-            "time": "2019-01-07T21:25:54+00:00"
+            "time": "2019-12-03T16:46:28+00:00"
         },
         {
             "name": "react/promise-stream",
@@ -754,16 +754,16 @@
         },
         {
             "name": "symfony/event-dispatcher",
-            "version": "v4.4.2",
+            "version": "4.4.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/event-dispatcher.git",
-                "reference": "b3c3068a72623287550fe20b84a2b01dcba2686f"
+                "reference": "578626e4b5538547033f3a746e8c60edf6c1db43"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/b3c3068a72623287550fe20b84a2b01dcba2686f",
-                "reference": "b3c3068a72623287550fe20b84a2b01dcba2686f",
+                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/578626e4b5538547033f3a746e8c60edf6c1db43",
+                "reference": "578626e4b5538547033f3a746e8c60edf6c1db43",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -826,7 +826,7 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "https://symfony.com",
-            "time": "2019-11-28T13:33:56+00:00"
+            "time": "2020-01-04T13:00:46+00:00"
         },
         {
             "name": "symfony/event-dispatcher-contracts",
@@ -894,16 +894,16 @@
         },
         {
             "name": "symfony/options-resolver",
-            "version": "v4.4.2",
+            "version": "4.4.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/options-resolver.git",
-                "reference": "2be23e63f33de16b49294ea6581f462932a77e2f"
+                "reference": "9a02d6662660fe7bfadad63b5f0b0718d4c8b6b0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/options-resolver/zipball/2be23e63f33de16b49294ea6581f462932a77e2f",
-                "reference": "2be23e63f33de16b49294ea6581f462932a77e2f",
+                "url": "https://api.github.com/repos/symfony/options-resolver/zipball/9a02d6662660fe7bfadad63b5f0b0718d4c8b6b0",
+                "reference": "9a02d6662660fe7bfadad63b5f0b0718d4c8b6b0",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -950,14 +950,14 @@
                 "configuration",
                 "options"
             ],
-            "time": "2019-10-28T21:57:16+00:00"
+            "time": "2020-01-04T13:00:46+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "stability-flags": {
-        "heroest/lightning-framework": 20
+        "heroest/lightning-react-framework": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

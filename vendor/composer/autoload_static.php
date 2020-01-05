@@ -11,7 +11,7 @@ class ComposerStaticInit237d5223d80d7f022b0b0d9f6d29050e
         '972fda704d680a3a53c68e34e193cb22' => __DIR__ . '/..' . '/react/promise-timer/src/functions_include.php',
         'cea474b4340aa9fa53661e887a21a316' => __DIR__ . '/..' . '/react/promise-stream/src/functions_include.php',
         'ebf8799635f67b5d7248946fe2154f4a' => __DIR__ . '/..' . '/ringcentral/psr7/src/functions_include.php',
-        '05f32160bae99dc4ae3a6d2692145638' => __DIR__ . '/..' . '/heroest/lightning-framework/src/function_include.php',
+        '3b19f57173702f59c7c3709b47ba8787' => __DIR__ . '/..' . '/heroest/lightning-react-framework/src/function_include.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -108,7 +108,7 @@ class ComposerStaticInit237d5223d80d7f022b0b0d9f6d29050e
         ),
         'Lightning\\' => 
         array (
-            0 => __DIR__ . '/..' . '/heroest/lightning-framework/src',
+            0 => __DIR__ . '/..' . '/heroest/lightning-react-framework/src',
         ),
     );
 
