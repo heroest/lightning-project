@@ -1,7 +1,7 @@
 {
     "name": "heroest/lightning-project",
     "description": "framework template",
-    "type": "package",
+    "type": "project",
     "license": "MIT",
     "authors": [
         {
