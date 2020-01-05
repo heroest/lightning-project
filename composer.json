@@ -9,7 +9,7 @@
             "email": "kakashi@live.cn"
         }
     ],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "require": {
         "heroest/lightning-framework": "dev-master"
     }
