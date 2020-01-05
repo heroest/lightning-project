@@ -43,10 +43,6 @@ class ComposerStaticInit237d5223d80d7f022b0b0d9f6d29050e
         array (
             'Lightning\\' => 10,
         ),
-        'A' => 
-        array (
-            'App\\' => 4,
-        ),
     );
 
     public static $prefixDirsPsr4 = array (
@@ -113,10 +109,6 @@ class ComposerStaticInit237d5223d80d7f022b0b0d9f6d29050e
         'Lightning\\' => 
         array (
             0 => __DIR__ . '/..' . '/heroest/lightning-framework/src',
-        ),
-        'App\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/app',
         ),
     );
 
