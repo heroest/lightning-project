@@ -1,0 +1,10 @@
+{
+    "require": {
+        "heroest/lightning-framework": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    }
+}

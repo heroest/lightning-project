@@ -1,0 +1,29 @@
+{
+    "database": {
+        "connections": {
+            "db": [
+                {
+                    "host": "localhost",
+                    "username": "root",
+                    "password": "root",
+                    "port": 3306,
+                    "dbname": "default",
+                    "role": "master",
+                    "num_connection": 2,
+                    "max_connection": 5
+                },
+                {
+                    "host": "localhost",
+                    "username": "root",
+                    "password": "root",
+                    "port": 3306,
+                    "dbname": "default",
+                    "role": "slave",
+                    "num_connection": 3,
+                    "max_connection": 10
+                }
+            ]
+        }
+    },
+    "waiting_list_limit": 100
+}
