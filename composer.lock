@@ -61,12 +61,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/heroest/lightning-react-framework.git",
-                "reference": "8e86eec1d6aba043cf0cfaef2a58d2d75d8da2e2"
+                "reference": "db3f600402994cb76327e21315a418dc3a3af8cc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/heroest/lightning-react-framework/zipball/8e86eec1d6aba043cf0cfaef2a58d2d75d8da2e2",
-                "reference": "8e86eec1d6aba043cf0cfaef2a58d2d75d8da2e2",
+                "url": "https://api.github.com/repos/heroest/lightning-react-framework/zipball/db3f600402994cb76327e21315a418dc3a3af8cc",
+                "reference": "db3f600402994cb76327e21315a418dc3a3af8cc",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -104,7 +104,7 @@
                 }
             ],
             "description": "non-block I/O framework",
-            "time": "2020-01-05T16:25:32+00:00"
+            "time": "2020-01-07T06:45:44+00:00"
         },
         {
             "name": "psr/http-message",
