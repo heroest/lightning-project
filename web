@@ -3,15 +3,17 @@
 require 'vendor/autoload.php';
 define('BASE_PATH', dirname(__FILE__));
 
-set_error_handler(function($errno, $errstr) {
-    throw new ErrorException($errstr, $errno);
+set_error_handler(function($errno, $errstr, $errfile, $errline) {
+    throw new ErrorException($errstr, $errno, E_RECOVERABLE_ERROR, $errfile, $errline);
 });
 
-ini_set('memory_limit', -1);
-$app = new \Lightning\MVC\Application('App');
+use function Lightning\{loop};
+use Lightning\MVC\Application;
 
-$loop = \lightning\container()->get('loop');
-$loop->addPeriodicTimer(5, function() {
+$app = new Application();
+$app->setApp('App\\', BASE_PATH . '/app');
+
+loop()->addPeriodicTimer(5, function() {
     $byte = memory_get_peak_usage(true);
     $peak = number_format(bcdiv($byte, 1024, 4), 2) . "KB";
     $byte = memory_get_usage(true);
