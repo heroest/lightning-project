@@ -6,6 +6,8 @@ array_shift($input);
 
 $cwd = getcwd();
 $base_path = "{$cwd}/{$input[0]}";
+$stub = strtolower($input[1]);
+$st = microtime(true);
 
 echo "Target-path: {$base_path}\r\n";
 
@@ -13,15 +15,24 @@ $collection = new \Lightning\Builder\FileCollection($base_path);
 $collection->ignore([
                 '\.git',
                 '\.dist',
-                'examples',
-                'tests',
-                'Tests',
-                'LICENSE',
+                'vendor/.*examples',
+                'vendor/.*tests',
+                'vendor/.*Tests',
+                'vendor/.*LICENSE',
+                'vendor/.*travis',
                 '\.md',
                 'Makefile',
                 'composer.json',
-                'composer.lock'
+                'composer.lock',
+                '\bpmake\b'
             ]);
+if ($stub == 'web') {
+    $collection->ignore('\bcmd\b');
+} elseif ($stub == 'cmd') {
+    $collection->ignore('\bweb\b');
+} else {
+    throw new InvalidArgumentException("Stub name expected to be 'web' or 'cmd'");
+}
 $collection->scan();
 
 $builder = new \Lightning\Builder\PharBuilder($collection->getIterator());
@@ -29,3 +40,4 @@ $stub = $input[1];
 $file_name = "{$cwd}/{$stub}.phar";
 echo "Phar-file: {$file_name}\r\n";
 $builder->create($file_name, "{$base_path}/{$stub}");
+echo "done in " . bcsub(microtime(true), $st, 4) . " sec\r\n";
