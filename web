@@ -22,7 +22,7 @@ loop()->addPeriodicTimer(5, function() {
     $php_current = number_format(bcdiv($byte, 1024, 4), 2) . "KB";
     $byte = memory_get_peak_usage(true);
     $php_peak = number_format(bcdiv($byte, 1024, 4), 2) . "KB";
-    echo json_encode(['time' => \Lightning\msDateNow(), 'total_peak' => $peak, 'total_current' => $current, 'php_peak' => $php_peak, 'php_current' => $php_current]) . "\r\n";
+    echo json_encode(['time' => \Lightning\msDate(), 'total_peak' => $peak, 'total_current' => $current, 'php_peak' => $php_peak, 'php_current' => $php_current]) . "\r\n";
 });
 
 $input = $_SERVER['argv'];

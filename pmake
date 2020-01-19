@@ -24,7 +24,8 @@ $collection->ignore([
                 'Makefile',
                 'composer.json',
                 'composer.lock',
-                '\bpmake\b'
+                '\bpmake\b',
+                'vendor/heroest/.*Builder',
             ]);
 if ($stub == 'web') {
     $collection->ignore('\bcmd\b');
