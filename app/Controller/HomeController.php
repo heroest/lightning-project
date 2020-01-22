@@ -33,19 +33,4 @@ class HomeController
         $output->send();
     }
 
-    public function httpAction(ServerRequestInterface $request, Output $output)
-    {
-        $query = $request->getQueryParams();
-        $url = $query['url'];
-
-        $client = container()->get('http-client');
-        $promise = $client->post($url, [], [], ['follow_redirects' => false]);
-        $promise->then(function ($result) use ($output) {
-            $output->setData(
-                Output::TYPE_JSON,
-                ['code' => 200, 'data' => $result, 'msg' => 'baidu-response']
-            );
-            $output->send();
-        });
-    }
 }
