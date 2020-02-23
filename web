@@ -1,19 +1,19 @@
 <?php
 
 require 'vendor/autoload.php';
+
+ini_set('memory_limit', '128M');
 define('BASE_PATH', dirname(__FILE__));
 
 set_error_handler(function($errno, $errstr, $errfile, $errline) {
     throw new ErrorException($errstr, $errno, E_RECOVERABLE_ERROR, $errfile, $errline);
 });
 
-use function Lightning\{loop};
-use Lightning\MVC\Application;
 
-$app = new Application();
+$app = new \Lightning\Web\Application();
 $app->setApp('App\\', BASE_PATH . '/app');
 
-loop()->addPeriodicTimer(5, function() {
+Lightning\setInterval(function() {
     $byte = memory_get_peak_usage(true);
     $peak = number_format(bcdiv($byte, 1024, 4), 2) . "KB";
     $byte = memory_get_usage(true);
@@ -23,7 +23,7 @@ loop()->addPeriodicTimer(5, function() {
     $byte = memory_get_peak_usage(true);
     $php_peak = number_format(bcdiv($byte, 1024, 4), 2) . "KB";
     echo json_encode(['time' => \Lightning\msDate(), 'total_peak' => $peak, 'total_current' => $current, 'php_peak' => $php_peak, 'php_current' => $php_current]) . "\r\n";
-});
+}, 30);
 
 $input = $_SERVER['argv'];
 $port = isset($input[1]) ? intval($input[1]) : 80;

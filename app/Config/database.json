@@ -7,23 +7,23 @@
                     "username": "root",
                     "password": "root",
                     "port": 3306,
-                    "dbname": "default",
+                    "dbname": "lightning",
                     "role": "master",
                     "num_connection": 2,
-                    "max_connection": 5
+                    "max_num_connection": 5
                 },
                 {
-                    "host": "localhost",
+                    "host": "127.0.0.1",
                     "username": "root",
                     "password": "root",
                     "port": 3306,
-                    "dbname": "default",
+                    "dbname": "lightning",
                     "role": "slave",
                     "num_connection": 3,
-                    "max_connection": 10
+                    "max_num_connection": 10
                 }
             ]
-        }
-    },
-    "waiting_list_limit": 100
+        },
+        "connection_waiting_list_size": 100
+    }
 }
