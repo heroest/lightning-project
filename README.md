@@ -3,7 +3,7 @@ an async-framework based on reactphp + libevent (optional)
 
 1. create-project
 ```bash
-composer create-project heroest\lightning-project my_project dev-master
+composer create-project heroest/lightning-project my_project dev-master
 ```
 
 2. run as web-server

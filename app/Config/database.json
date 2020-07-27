@@ -24,6 +24,6 @@
                 }
             ]
         },
-        "connection_waiting_list_size": 100
+        "max_num_pending_query": 200
     }
 }

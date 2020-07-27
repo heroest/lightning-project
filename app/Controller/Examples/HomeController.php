@@ -3,7 +3,7 @@
 namespace App\Controller\Examples;
 
 use Lightning\Web\{Input, Output};
-use function Lightning\{await, container, config};
+use Lightning\Coroutine\SystemCall\GetCoroutineId;
 
 class HomeController
 {
@@ -11,14 +11,25 @@ class HomeController
     {
         $name = $input->post('name', 'lightning');
         $raw = $input->rawPost();
-        $output->setData(
-            Output::TYPE_JSON,
-            [
+    
+        $output->setFormat(Output::FORMAT_JSON)
+            ->setContent([
                 'code' => 200, 
                 'data' => ['ip' => $input->getClientIp(), 'raw' => $raw],
                 'msg' => "hello-world-from-{$name}"
-            ]
-        );
-        $output->send();
+            ])
+            ->send();
+    }
+
+    public function coroutineAction(Input $input, Output $output)
+    {
+        $name = $input->query('name', 'neosteam');
+        $coroutine_id = yield new GetCoroutineId();
+        $output->setFormat(Output::FORMAT_JSON)
+            ->setContent([
+                'hello' => $name,
+                'couroutine_id' => $coroutine_id
+            ])
+            ->send();
     }
 }
