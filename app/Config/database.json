@@ -9,8 +9,8 @@
                     "port": 3306,
                     "dbname": "lightning",
                     "role": "master",
-                    "num_connection": 2,
-                    "max_num_connection": 5
+                    "num_connections": 2,
+                    "max_num_connections": 5
                 },
                 {
                     "host": "127.0.0.1",
@@ -19,8 +19,8 @@
                     "port": 3306,
                     "dbname": "lightning",
                     "role": "slave",
-                    "num_connection": 3,
-                    "max_num_connection": 10
+                    "num_connections": 3,
+                    "max_num_connections": 10
                 }
             ]
         },
